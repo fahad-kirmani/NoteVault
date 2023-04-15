@@ -5,7 +5,7 @@ const Login = (props) => {
   let navigate = useNavigate()
   const Handlesubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`https://notevault-real.onrender.com//user/auth/login`, {
+    const response = await fetch(`https://notevault-real.onrender.com/user/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
