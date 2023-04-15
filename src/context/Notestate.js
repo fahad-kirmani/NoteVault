@@ -1,7 +1,7 @@
 import NotesContext from "./Notecontext";
 import { useState } from "react";
 const Notestate = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://notevault-real.onrender.com";
   const s1 = [];
   const [notes, setnotes] = useState(s1);
 
