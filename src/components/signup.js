@@ -13,7 +13,7 @@ const Handlesubmit = async (e) => {
         props.showmsg(" Password should be same ", "danger");
         return
       }
-    const response = await fetch(`http://localhost:5000/user/auth/createuser`, {
+    const response = await fetch(`https://notevault-real.onrender.com/user/auth/createuser`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
