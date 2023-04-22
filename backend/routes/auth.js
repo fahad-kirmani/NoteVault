@@ -85,9 +85,10 @@ router.post(
       return res.status(400).json({success, errors: errors.array() });
     }
 
+    try {
     const {email, password}= req.body;
     //checking if the user exists or not using the User.findOne if it exist it sends a response of 400
-    try {
+    
       let user = await User.findOne({ email });
       if (!user) {
         success=false;
