@@ -117,7 +117,7 @@ router.post(
       
     } catch (err) {
       console.error(err);
-      res.status(500).send("An error occured");
+      res.status(500).json(error:err.message);
     }
   }
 );
